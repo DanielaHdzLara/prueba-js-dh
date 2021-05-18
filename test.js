@@ -16,7 +16,7 @@ const { writeFileSync } = require('fs');
     agregarTarea(tempData[0]);
     agregarTarea(tempData[1]);
     const respuesta = leerTareas();
-    if (!respuesta.length || respuesta.length !== 2) {
+    if (!respuesta.length ||respuesta.length !== 2) {
         console.error("\x1b[31m", `error: leyendo o escribiendo tareas, esperando: ${JSON.stringify(tempData)}, resultado: ${JSON.stringify(respuesta)}`);
         return;
     }
